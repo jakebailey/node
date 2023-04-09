@@ -5,7 +5,7 @@ const cp = require('child_process');
 const http = require('http');
 
 if (process.argv[2] === 'server') {
-  process.on("disconnect", () => process.exit(0));
+  process.on('disconnect', () => process.exit(0));
 
   const server = http.createServer((req, res) => {
     res.writeHead(200);
